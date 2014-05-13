@@ -5,7 +5,27 @@ body, html, div, p, *{
 }
 
 /*====TAGS====*/
-
+nav{
+	background: #00F;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+}
+nav ul{
+	margin: 0 auto;
+	display: inline-block;
+	list-style: none;
+	overflow: auto;
+	height: 100%;
+}
+nav li{
+	line-height: 50px;
+	padding: 0 20px;
+	margin: 0 10px;
+	background: #0F0;
+	height: 100%;
+	float: left;
+}
 /*====ID====*/
 #aside_left{
 	float: left;
@@ -27,7 +47,7 @@ body, html, div, p, *{
 #content{
 	background: #F00;
 	float: left;
-	min-height: 300px;
+	height: 1000px;
 	width: 70%;
 }
 #footer{

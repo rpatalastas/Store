@@ -1,7 +1,8 @@
 <?php 
 
+//====DIRECTORIES====
 //Root Directory
-define('ROOT_DIR', $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI]);
+define('ROOT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/Store/');
 //Core Directory
 define('CORE_DIR', ROOT_DIR . 'core/');
 //Database Directory
@@ -22,5 +23,13 @@ define('SCRIPTS_DIR', ROOT_DIR . 'javascript/');
 define('PAGES_DIR', ROOT_DIR . 'pages/');
 //Stylesheets Directory
 define('STYLES_DIR', ROOT_DIR . 'stylesheets/');
+
+//====URLS====
+//Root URL
+define('ROOT_URL', "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+//Stylesheets URL
+define('STYLES_URL', ROOT_URL . 'stylesheets/');
+//Javascript Directory
+define('SCRIPTS_URL', ROOT_URL . 'javascript/');
 
  ?>

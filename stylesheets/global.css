@@ -1,3 +1,4 @@
+/*#057aff*/
 /*====RESET====*/
 body, html, div, p, *{
 	margin: 0;
@@ -5,6 +6,19 @@ body, html, div, p, *{
 }
 
 /*====TAGS====*/
+body{
+	font-family:"Lucida Sans Unicode";
+}
+button{
+	background:#FFF;
+	border:1px solid #333;
+	cursor:pointer;
+	padding: 4px 5px;
+	font-weight:bold;
+}
+button:hover{
+	color:#057aff;
+}
 
 /*====ID====*/
 #aside_left{
@@ -12,6 +26,7 @@ body, html, div, p, *{
 }
 #aside_right{
 	float: right;
+	text-align: right;
 }
 #banner{
 	background: url(../images/core/banner.png) no-repeat center;
@@ -27,7 +42,7 @@ body, html, div, p, *{
 #content{
 	background: #F00;
 	float: left;
-	height: 1000px;
+	min-height: 300px;
 	width: 70%;
 }
 #footer{
@@ -35,6 +50,15 @@ body, html, div, p, *{
 	clear:both;
 	min-height: 150px;
 	width: 100%;
+}
+#login_bar{
+	background: #4F4F4F;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+}
+#login_button{
+	margin-right: 20px;
 }
 #main_frame{
 	height: 100%;

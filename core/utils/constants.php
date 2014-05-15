@@ -29,7 +29,12 @@ define('STYLES_DIR', ROOT_DIR . 'stylesheets/');
 define('ROOT_URL', "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 //Stylesheets URL
 define('STYLES_URL', ROOT_URL . 'stylesheets/');
-//Javascript Directory
+//Javascript URL
 define('SCRIPTS_URL', ROOT_URL . 'javascript/');
+//Core Images URL
+define('CORE_IMAGES_URL', ROOT_URL . 'images/core/');
+//Product Images URL
+define('PRODUCT_IMAGES_URL', ROOT_URL . 'images/products/');
+
 
  ?>

@@ -8,6 +8,8 @@ class User
 	private $name;
 	private $surname;
 	private $email;
+	private $password;
+	private $salt;
 	private $address;
 	private $phone;
 
@@ -39,6 +41,22 @@ class User
 	}
 	public function setEmail($emailIn){
 		$this->email = $emailIn;
+	}
+	public function getPassword()
+	{
+		return $this->password;
+	}
+	public function setPassword($password)
+	{
+		$this->password = $password;
+	}
+	public function getSalt()
+	{
+		return $this->salt;
+	}
+	public function setSalt($salt)
+	{
+		$this->salt = $salt;
 	}
 	public function getAddress(){
 		return $this->address;

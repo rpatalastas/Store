@@ -1,5 +1,5 @@
-<aside>
-	<div id="aside_right" class="aside">
+<aside id="aside_right">
+	<div class="aside_div">
 		Sample Content		
 	</div>
 </aside>

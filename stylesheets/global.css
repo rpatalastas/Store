@@ -25,7 +25,10 @@ button{
 	font-weight:bold;
 }
 button:hover{
-	box-shadow: 0px 0px 15px #F00;
+	box-shadow: 0px 0px 15px #007BFF;
+}
+input:focus{
+	box-shadow: 0px 0px 15px #007BFF;
 }
 
 /*====ID====*/
@@ -38,33 +41,31 @@ button:hover{
 #banner{
 	background: url(../images/core/banner.png) no-repeat center;
 	height: 100px;
-	margin-left: 20px;
+	display:block;
 	max-width: 30%;
 	min-width: 450px;
 	padding:0 10px;
 }
 #body_frame{
-	background: #000;
 	clear: both;
 	overflow: auto;
 	width: 100%;
 }
 #content{
-	background: #F00;
 	float: left;
 	min-height: 300px;
 	width: 70%;
 }
 #footer{
-	background: #0FF;
 	clear:both;
 	min-height: 150px;
 	width: 100%;
 }
 #login_bar{
-	height: 40px;
-	line-height: 40px;
-	padding:5px;
+	width: 100%;
+	float: right;
+	height: 50px;
+	line-height: 50px;
 	text-align: right;
 }
 #login_button{
@@ -75,5 +76,25 @@ button:hover{
 	min-height: 500px;
 	width: 100%;
 }
+#search_bar{
+	height:50px;
+	width: 100%;
+	line-height: 50px;
+	float: right;
+}
+#search_input{
+	height: 25px;
+	width:800px;
+	margin-left: 20px;
+}
+#top_frame{
+	overflow: auto;
+	width: 70%;
+	float: right;
+	height: 100px;
+}
 
 /*====CLASS====*/
+.clear_both{
+	clear:both;
+}

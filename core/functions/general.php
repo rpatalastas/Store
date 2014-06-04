@@ -20,6 +20,7 @@ function render_css($css){
 	}
 }
 
+//Add boolean to indicate async
 function render_js($js){
 	if($js != null){
 		if(!is_array($js)){

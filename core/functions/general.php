@@ -20,15 +20,32 @@ function render_css($css){
 	}
 }
 
-//Add boolean to indicate async
 function render_js($js){
 	if($js != null){
-		if(!is_array($js)){
-			throw new Exception("JS Not an array!", 1);
-			return;
+		if(is_array($js)){
+			foreach($js as $script){
+				if(is_array($script)){
+					$scriptTag = "";
+					$scriptTag .= '<script type="text/javascript" src="';
+					$scriptTag .= SCRIPTS_URL . $script[0] . '.js"';
+					if(isset($script[1])){
+						if($script[1] == true){
+							$scriptTag .= ' async ';
+						}
+					}
+					else{
+						throw new Exception("Define async parameter.", 1);
+					}
+					$scriptTag .= '></script>';
+					echo $scriptTag;
+				}
+				else{
+					throw new Exception("Array format error", 1);
+				}
+			}
 		}
-		foreach($js as $script){
-			echo '<script type="text/javascript" src="' . SCRIPTS_URL . $script . '.js" async/></script>';
+		else{
+			throw new Exception("JS Not an array!", 1);
 		}
 	}
 }

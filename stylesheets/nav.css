@@ -6,6 +6,7 @@ nav{
 		background-image: linear-gradient(to bottom, #FFFFFF 0%, #C7C7C7 100%);
 		border-radius: 10px;
 		border: 1px solid gray;
+		font-variant: small-caps;
 		height: 60px;
 		margin: -20px auto 20px auto;
 		width: 95%;

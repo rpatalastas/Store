@@ -6,15 +6,17 @@ aside{
 	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #C7C7C7 100%);
 	background-image: linear-gradient(to bottom, #FFFFFF 0%, #C7C7C7 100%);
 	border-radius:10px;
-	border: 1px solid gray;
+	border: 1px solid #808080;
 	min-height: 200px;
 	min-width: 200px;
 	width: 15%;
 }
+aside .content_container:last-child{
+	border-bottom:none;
+}
 body{
 	color: #444;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-variant: small-caps;
 	width: 100%;
 }	
 button{
@@ -45,7 +47,8 @@ footer{
 	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #C7C7C7 100%);
 	background-image: linear-gradient(to bottom, #FFFFFF 0%, #C7C7C7 100%);
 	border-radius:10px;
-	border: 1px solid gray;
+	border: 1px solid #808080;
+	float:left;
 	height: 200px;
 	margin: 20px auto 0 auto;
 	width: 99.5%;
@@ -67,11 +70,14 @@ footer{
 	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #C7C7C7 100%);
 	background-image: linear-gradient(to bottom, #FFFFFF 0%, #C7C7C7 100%);
 	border-radius:10px;
-	border: 1px solid gray;
+	border: 1px solid #808080;
 	min-height: 200px;
 	margin: 0 auto;
 	max-width: 65%;
 	clear: none;
+}
+#content .content_container:last-child{
+	border-bottom: none;
 }
 #login_button{
 	float: right;
@@ -93,18 +99,25 @@ footer{
 }
 /*====CLASSES====*/
 .aside_header{
-	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#99FFA0), to(#00CF03));
-	background-image: -webkit-linear-gradient(#99FFA0 0%, #00CF03 100%);
 	background-image: -moz-linear-gradient(#99FFA0 0%, #00CF03 100%);
 	background-image: -o-linear-gradient(#99FFA0 0%, #00CF03 100%);
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#99FFA0), to(#00CF03));
+	background-image: -webkit-linear-gradient(#99FFA0 0%, #00CF03 100%);
 	background-image: linear-gradient(#99FFA0 0%, #00CF03 100%);
 	border-radius:inherit;
 	border: inherit;
+	font-size:15pt;
+	font-variant: small-caps;
 	height: 40px;
 	line-height: 40px;
 	margin: 5px auto;
 	text-align: center;
 	width: 92%;
+}
+.content_container{
+	border-bottom: inherit;
+	margin-bottom: 20px;
+	padding: 15px;
 }
 .content_header{
 	background-image: -moz-linear-gradient(bottom, #FCC992 0%, #FF8400 100%);
@@ -113,8 +126,11 @@ footer{
 	background-image: -webkit-linear-gradient(bottom, #FCC992 0%, #FF8400 100%);
 	background-image: linear-gradient(to bottom, #FCC992 0%, #FF8400 100%);
 	border-radius: inherit;
-	border: inherit;
+	border: 1px solid #808080;
+	font-size:18pt;
+	font-variant: small-caps;
 	height: 40px;
+	letter-spacing: 2px;
 	line-height: 40px;
 	margin: 5px auto;
 	text-align: center;

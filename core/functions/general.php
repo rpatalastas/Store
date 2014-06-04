@@ -1,5 +1,13 @@
 <?php 
 
+/*====	RENDERING FUNCTIONS ====*/
+function render_core_css(){
+	$core_css = array('reset', 'nav', 'global', 'global_desktop', 'global_tablet');
+	foreach($core_css as $sheet){
+		echo '<link rel="stylesheet" type="text/css" href="' . STYLES_URL . $sheet . '.css" />';
+	}
+}
+
 function render_css($css){
 	if($css != null){
 		if(!is_array($css)){
@@ -23,5 +31,6 @@ function render_js($js){
 		}
 	}
 }
+/*====	END RENDERING FUNCTIONS  ====*/
 
 ?>

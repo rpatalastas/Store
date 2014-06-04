@@ -48,11 +48,24 @@ footer{
 	background-image: linear-gradient(to bottom, #FFFFFF 0%, #C7C7C7 100%);
 	border-radius:10px;
 	border: 1px solid #808080;
+	color: #8F8F8F;
 	float:left;
+	font-style: italic;
 	height: 200px;
 	margin: 20px auto 0 auto;
+	text-align: center;
 	width: 99.5%;
 }	
+footer div{
+	display: inline-block;
+	height: 90%;
+	margin: 10px 0;
+	width: 33%;
+}
+footer div:nth-child(2){
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+}
 /*====ID'S====*/
 #banner{
 	background-image: -moz-linear-gradient(bottom, #000000 0%, #454545 100%);

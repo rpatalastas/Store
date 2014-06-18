@@ -15,8 +15,11 @@ aside .content_container:last-child{
 	border-bottom:none;
 }
 body{
+	background:url(../images/core/bkg.jpg) no-repeat top center;
+	background-size: 100% 100%;
 	color: #444;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	overflow: auto;
 	width: 100%;
 }	
 button{
@@ -49,7 +52,6 @@ footer{
 	border-radius:10px;
 	border: 1px solid #808080;
 	color: #8F8F8F;
-	float:left;
 	font-style: italic;
 	height: 200px;
 	margin: 20px auto 0 auto;
@@ -126,6 +128,9 @@ footer div:nth-child(2){
 	margin: 5px auto;
 	text-align: center;
 	width: 92%;
+}
+.clear{
+	clear:both;
 }
 .content_container{
 	border-bottom: inherit;
